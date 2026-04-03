@@ -1,0 +1,28 @@
+目标IP: 192.168.1.13
+脚本时间: 2026-03-30_165555
+扫描方式: 本机直接执行 nmap
+WiFi名称: AndroidAP_3254
+执行指令: nmap -sS -sV -Pn -T4 -p 1-65535 192.168.1.13
+=== Nmap 原始输出 ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-03-30 16:51 й׼ʱ
+Nmap scan report for 192.168.1.13
+Host is up (0.0095s latency).
+Not shown: 64477 closed tcp ports (reset), 1057 filtered tcp ports (no-response)
+PORT      STATE SERVICE VERSION
+60002/tcp open  unknown
+MAC Address: 46:37:0B:BA:36:34 (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 259.68 seconds
+
+
+=== 端口扫描结果 ===
+- 60002: open, 服务=unknown, info=
+
+=== 危险端口连接及安全机制判断 ===
+端口 60002:
+  连接指令: socket.connect(('192.168.1.13', 60002))
+  连接: 成功
+  Banner/应答: 
+  安全建议: 需要手工判定安全机制
+
